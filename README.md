@@ -27,7 +27,7 @@
 ### 1. 安装技能
 ```bash
 # 克隆仓库
-git clone https://github.com/tigerkin/vue-code-reviewer.git
+git clone https://github.com/MenFsq/vue-code-reviewer.git
 
 # 复制到OpenClaw技能目录
 cp -r vue-code-reviewer ~/.openclaw/workspace/skills/
@@ -219,7 +219,7 @@ npm test
 
 ## 🤝 贡献
 
-欢迎贡献代码、报告问题或提出建议！
+欢迎贡献代码、报告问题或提出建议！请阅读[贡献指南](CONTRIBUTING.md)和[行为准则](CODE_OF_CONDUCT.md)。
 
 ### 贡献步骤
 1. Fork仓库
@@ -247,8 +247,8 @@ MIT License © 2026 小老虎
 
 ## 📞 支持
 
-- 问题报告：[GitHub Issues](https://github.com/tigerkin/vue-code-reviewer/issues)
-- 功能请求：[GitHub Discussions](https://github.com/tigerkin/vue-code-reviewer/discussions)
+- 问题报告：[GitHub Issues](https://github.com/MenFsq/vue-code-reviewer/issues)
+- 功能请求：[GitHub Discussions](https://github.com/MenFsq/vue-code-reviewer/discussions)
 - 文档：[技能文档](./SKILL.md)
 
 ---
