@@ -1,0 +1,50 @@
+{
+  "vueCodeReviewer": {
+    "enabled": true,
+    "rules": {
+      "quality": {
+        "enforceTypeSafety": true,
+        "strictNullChecks": true,
+        "noExplicitAny": true,
+        "noUnusedVars": true,
+        "noUnusedImports": true
+      },
+      "performance": {
+        "checkLargeLists": true,
+        "checkDuplicateRenders": true,
+        "checkAsyncComponents": true,
+        "checkMemoryLeaks": true,
+        "checkBundleSize": true
+      },
+      "security": {
+        "checkXSS": true,
+        "checkSensitiveData": true,
+        "checkAuth": true,
+        "checkInputValidation": true
+      },
+      "bestPractices": {
+        "enforceComponentStructure": true,
+        "enforceNamingConventions": true,
+        "enforceImportOrder": true,
+        "enforceCommentQuality": true
+      }
+    },
+    "thresholds": {
+      "criticalIssues": 0,
+      "majorIssues": 3,
+      "minorIssues": 10
+    },
+    "ignoredFiles": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.test.*",
+      "**/*.spec.*"
+    ],
+    "ignoredRules": [],
+    "autoFix": {
+      "enabled": false,
+      "rules": ["no-unused-imports", "no-unused-vars"]
+    }
+  }
+}

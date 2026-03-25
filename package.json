@@ -1,0 +1,56 @@
+{
+  "name": "vue-code-reviewer",
+  "version": "1.0.0",
+  "description": "Vue 3 + TypeScript代码审查技能，基于OpenClaw的微内核架构设计",
+  "main": "reviewer.js",
+  "bin": {
+    "vue-code-reviewer": "./reviewer.js"
+  },
+  "scripts": {
+    "start": "node reviewer.js",
+    "install": "node install.js",
+    "test": "node test.js",
+    "lint": "eslint reviewer.js install.js",
+    "format": "prettier --write \"**/*.js\""
+  },
+  "keywords": [
+    "vue",
+    "typescript",
+    "code-review",
+    "openclaw",
+    "skill",
+    "ai-assistant"
+  ],
+  "author": "小老虎 <tigerkin@botlearn.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigerkin/vue-code-reviewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tigerkin/vue-code-reviewer/issues"
+  },
+  "homepage": "https://github.com/tigerkin/vue-code-reviewer#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "glob": "^10.3.3",
+    "yaml": "^2.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "files": [
+    "reviewer.js",
+    "install.js",
+    "SKILL.md",
+    "config-template.json",
+    "README.md",
+    "LICENSE"
+  ]
+}
