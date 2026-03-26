@@ -26,8 +26,8 @@
 
 ### 1. 安装技能
 ```bash
-# 克隆仓库（使用main分支）
-git clone -b main https://github.com/MenFsq/vue-code-reviewer.git
+# 克隆仓库（使用master分支）
+git clone https://github.com/MenFsq/vue-code-reviewer.git
 
 # 复制到OpenClaw技能目录
 cp -r vue-code-reviewer ~/.openclaw/workspace/skills/
@@ -241,7 +241,7 @@ npm test
    ```bash
    git push origin feature/你的功能名称
    ```
-6. 在GitHub上创建Pull Request到原仓库的`main`分支
+6. 在GitHub上创建Pull Request到原仓库的`master`分支
 
 ### 开发规范
 - 使用ESLint进行代码检查
