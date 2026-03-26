@@ -26,8 +26,8 @@
 
 ### 1. 安装技能
 ```bash
-# 克隆仓库
-git clone https://github.com/MenFsq/vue-code-reviewer.git
+# 克隆仓库（使用main分支）
+git clone -b main https://github.com/MenFsq/vue-code-reviewer.git
 
 # 复制到OpenClaw技能目录
 cp -r vue-code-reviewer ~/.openclaw/workspace/skills/
@@ -222,11 +222,26 @@ npm test
 欢迎贡献代码、报告问题或提出建议！请阅读[贡献指南](CONTRIBUTING.md)和[行为准则](CODE_OF_CONDUCT.md)。
 
 ### 贡献步骤
-1. Fork仓库
-2. 创建功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 创建Pull Request
+1. Fork仓库到你的GitHub账户
+2. 克隆你的fork到本地：
+   ```bash
+   git clone https://github.com/你的用户名/vue-code-reviewer.git
+   cd vue-code-reviewer
+   ```
+3. 创建功能分支：
+   ```bash
+   git checkout -b feature/你的功能名称
+   ```
+4. 进行更改并提交：
+   ```bash
+   git add .
+   git commit -m '描述你的更改'
+   ```
+5. 推送到你的fork：
+   ```bash
+   git push origin feature/你的功能名称
+   ```
+6. 在GitHub上创建Pull Request到原仓库的`main`分支
 
 ### 开发规范
 - 使用ESLint进行代码检查
