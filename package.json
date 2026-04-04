@@ -11,7 +11,8 @@
     "install": "node install.js",
     "test": "node test.js",
     "lint": "eslint reviewer.js install.js",
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\"",
+    "botlearn-integration": "node integrations/botlearn-actionable-learning.js"
   },
   "keywords": [
     "vue",
