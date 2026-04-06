@@ -12,7 +12,9 @@
     "test": "node test.js",
     "lint": "eslint reviewer.js install.js",
     "format": "prettier --write \"**/*.js\"",
-    "botlearn-integration": "node integrations/botlearn-actionable-learning.js"
+    "botlearn-integration": "node integrations/botlearn-actionable-learning.js",
+    "report": "node -e \"const CodeQualityReporter = require('./integrations/code-quality-reporter'); new CodeQualityReporter().initialize(); console.log('代码质量报告生成器已初始化');\"",
+    "generate-report": "node integrations/code-quality-reporter.js"
   },
   "keywords": [
     "vue",
