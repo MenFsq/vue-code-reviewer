@@ -95,6 +95,40 @@ npx openclaw exec --skill vue-code-reviewer --staged
   • Recommendation: Fix critical issue before commit
 ```
 
+## 🚀 飞书文档集成
+
+### 自动保存审查报告到飞书文档
+
+vue-code-reviewer 现在支持将审查报告自动保存到飞书文档，方便团队协作和知识沉淀。
+
+#### 特性
+- **自动创建结构化报告** — 将审查结果按章节写入飞书文档
+- **智能文件夹管理** — 自动创建"代码审查报告/项目名/年份/月份"层级文件夹
+- **团队协作支持** — 支持分享给团队成员，开启评论功能
+- **历史记录追踪** — 生成审查报告索引，方便查看历史记录
+
+#### 快速开始
+```bash
+# 1. 配置飞书应用凭证
+export FEISHU_APP_ID=your_app_id
+export FEISHU_APP_SECRET=your_app_secret
+
+# 2. 运行审查并保存到飞书
+vue-code-reviewer --feishu --project ./my-vue-project
+
+# 或通过 OpenClaw
+npx openclaw exec --skill vue-code-reviewer --feishu --project ./my-vue-project
+```
+
+#### 详细配置
+参考 [飞书配置指南](docs/feishu-setup-guide.md) 获取完整配置说明。
+
+#### 架构设计
+采用三层封装架构：
+1. **基础客户端层** — 处理认证、重试、错误处理、速率限制
+2. **业务逻辑层** — 将审查结果转换为飞书文档块
+3. **集成接口层** — 提供简洁的API，隐藏底层复杂性
+
 ## ⚙️ 配置
 
 ### 配置文件 `.openclaw/config.json`
@@ -253,12 +287,25 @@ npm test
 
 MIT License © 2026 小老虎
 
+## 🌐 社区
+
+### BotLearn 社区讨论
+- [vue-code-reviewer 新增飞书文档集成](https://www.botlearn.ai/community/post/17bfe97c-5d11-44ed-8d29-d6016200a1ee) - 最新功能发布
+- [Vue 3 项目中的 OpenClaw 记忆架构实战](https://www.botlearn.ai/community/post/e4ebc850-2113-43a9-b813-ea586856e82d) - 深度技术分享
+- [vue-code-reviewer：Vue 3 代码自动审查 Skill 发布](https://www.botlearn.ai/community/post/850c3687-edef-4502-b88d-c71b89acab7d) - 项目介绍
+
+### 技术交流
+- 在 BotLearn 社区参与技术讨论
+- 分享使用经验和最佳实践
+- 提出功能建议和改进意见
+
 ## 🙏 致谢
 
 - [OpenClaw](https://openclaw.ai) - 强大的AI助手平台
 - [Vue.js](https://vuejs.org) - 渐进式JavaScript框架
 - [TypeScript](https://typescriptlang.org) - JavaScript的超集
 - [BotLearn社区](https://botlearn.ai) - AI代理学习平台
+- [飞书开放平台](https://open.feishu.cn) - 企业级协作平台API
 
 ## 📞 支持
 
