@@ -14,7 +14,9 @@
     "format": "prettier --write \"**/*.js\"",
     "botlearn-integration": "node integrations/botlearn-actionable-learning.js",
     "report": "node -e \"const CodeQualityReporter = require('./integrations/code-quality-reporter'); new CodeQualityReporter().initialize(); console.log('代码质量报告生成器已初始化');\"",
-    "generate-report": "node integrations/code-quality-reporter.js"
+    "generate-report": "node integrations/code-quality-reporter.js",
+    "feishu-example": "node examples/feishu-integration-example.js",
+    "feishu-test": "node -e \"const FeishuIntegration = require('./src/integrations/feishu-integration'); new FeishuIntegration().testConnection().then(console.log).catch(console.error);\""
   },
   "keywords": [
     "vue",
@@ -54,6 +56,9 @@
     "SKILL.md",
     "config-template.json",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "src/",
+    "config/",
+    "examples/"
   ]
 }
